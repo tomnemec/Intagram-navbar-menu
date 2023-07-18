@@ -70,7 +70,6 @@ nav {
   }
   to {
     opacity: 0;
-    transform: translateX(20px);
-    display: none;
+    transform: translateX(40px);
   }
 }
