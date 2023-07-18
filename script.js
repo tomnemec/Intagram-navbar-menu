@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ref.innerHTML = ' <i class="fas fa-times"></i>';        
         clicked = false;
       } else {        
-        menu.style.animationName = 'fadeToRight 0.4s ease-in-out';
-        menu.style.display = 'none';
+        menu.style.animationName = 'fadeToRight 0.4s ease-in-out';       
         ref.innerHTML = '<i class="fas fa-bars"></i>';
         clicked = true;
       }
