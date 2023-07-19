@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
       clicked = true;  
       menu.classList.remove('menu--fade-in');    
       menu.classList.add('menu--fade-out');   
-      menu.classList.add('hide');
+      setTimeout(function () {
+        menu.classList.add('hide');
+      }, 0.2 * 1000);
       ref.innerHTML = '<i class="fas fa-bars"></i>';
     }
   });
