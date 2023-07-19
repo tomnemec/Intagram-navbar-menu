@@ -31,7 +31,7 @@ nav {
   transform: scale(1.1);
 }
 .menu {
-  display: none;
+  display: flex;
   position: absolute;
   right: 0;
   top: 60px;
@@ -40,6 +40,12 @@ nav {
   width: 180px;
   background: white;
   color: rgb(181, 3, 181);
+}
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
 }
 .menu li {
   list-style: none;
@@ -70,6 +76,12 @@ nav {
   }
   to {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(70px);
   }
+}
+.menu--fade-in {
+  animation: fadeFromRight 0.3s ease-in-out;
+}
+.menu--fade-out {
+  animation: fadeToRight 0.3s ease-in-out;
 }
